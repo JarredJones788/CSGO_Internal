@@ -23,6 +23,8 @@ public:
 	QAngle GetEyeAngles();
 	Vector GetBonePos(int boneID);
 	bool IsPlayer();
+	bool IsImmune();
+	bool IsAlive();
 	bool IsWeapon();
 	bool IsVisible(CBaseEntity* localPlayer);
 	bool OnTarget(QAngle &viewAngles);

@@ -30,6 +30,21 @@ bool CBaseEntity::IsPlayer()
 	return false;
 }
 
+bool CBaseEntity::IsAlive()
+{
+	if (this->GetHealth() < 1 || this->GetHealth() > 100) {
+		return false;
+	}
+
+	return true;
+}
+
+bool CBaseEntity::IsImmune()
+{
+	return *(bool*)((DWORD)this + Netvar->DT_CSPlayer.m_bGunGameImmunity);
+}
+
+
 Vector CBaseEntity::GetBonePos(int boneID)
 {
 	matrix3x4_t boneMatrix[128];

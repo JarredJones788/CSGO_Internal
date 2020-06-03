@@ -1,0 +1,35 @@
+﻿  CBaseEntity.cpp
+  CInput.cpp
+  ClassIdManager.cpp
+  CMath.cpp
+  CreateMove.cpp
+  DirectxHooks.cpp
+  dllmain.cpp
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\CBaseEntity.cpp(42,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\dllmain.cpp(9,1): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\dllmain.cpp(10,1): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\dllmain.cpp(11,1): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Aimbot.cpp
+  Hooks.cpp
+  IEngineTrace.cpp
+  Interfaces.cpp
+  IVPanel.cpp
+  Misc.cpp
+  NetvarManager.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\NetvarManager.cpp(1447,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\NetvarManager.cpp(1494,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\NetvarManager.cpp(1522,23): warning C4018: '<': signed/unsigned mismatch
+  Paintraverse.cpp
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\NetvarManager.cpp(1560,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(33,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(34,16): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(41,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(41,83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(41,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Utility.cpp
+  Generating Code...
+C:\Users\Jarred\source\repos\CSGO_Internal\CSGO_Internal\Paintraverse.cpp(41,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  CSGO_Internal.vcxproj -> C:\Users\Jarred\source\repos\CSGO_Internal\Debug\CSGO_Internal.dll

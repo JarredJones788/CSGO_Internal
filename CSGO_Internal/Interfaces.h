@@ -26,6 +26,7 @@ public:
 	CInput				* Input = nullptr;
 	ISurface			* Surface = nullptr;
 	IEngineTrace		* EngineTrace = nullptr;
+
 };
 
 extern CInterfaces * Interfaces;

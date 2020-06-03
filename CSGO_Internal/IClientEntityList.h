@@ -11,7 +11,7 @@ public:
 	// NOTE: This function is only a convenience wrapper.
 	// It returns GetClientNetworkable( entnum )->GetIClientEntity().
 	virtual IClientEntity*		GetClientEntity(int entnum) = 0;
-	virtual IClientEntity*		GetClientEntityFromHandle(CBaseHandle hEnt) = 0;
+	virtual IClientEntity*		GetClientEntityFromHandle(CBaseHandle* hEnt) = 0;
 
 	// Returns number of entities currently in use
 	virtual int					NumberOfEntities(bool bIncludeNonNetworkable) = 0;

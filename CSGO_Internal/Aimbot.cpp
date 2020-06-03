@@ -18,7 +18,7 @@ CBaseEntity *Aimbot::GetClosestEnemyToCrosshair(CBaseEntity* localPlayer, QAngle
 	{
 		CBaseEntity* e = (CBaseEntity*)Interfaces->ClientEntityList->GetClientEntity(i);
 
-		if (e && !e->IsDormant() && e->GetTeam() != localPlayer->GetTeam() && !(e->GetHealth() > 100 || e->GetHealth() < 1) && e->IsVisible(localPlayer))
+		if (e && !e->IsDormant() && e->GetTeam() != localPlayer->GetTeam() && e->IsAlive() && e->IsVisible(localPlayer) && !e->IsImmune())
 		{
 			float delta = (Math.CalcAngle(localPlayer->GetEyePos(), e->GetEyePos()).Clamped() - viewAngles).Clamped().Length();
 
