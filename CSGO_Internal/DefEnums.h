@@ -1036,7 +1036,7 @@ enum mp_break_t {
 #define FCVAR_UNREGISTERED		(1<<0)	// If this is set, don't add to linked list, etc.
 #define FCVAR_DEVELOPMENTONLY	(1<<1)	// Hidden in released products. Flag is removed automatically if ALLOW_DEVELOPMENT_CVARS is defined.
 #define FCVAR_GAMEDLL			(1<<2)	// defined by the game DLL
-#define FCVAR_CLIENTDLL			(1<<3)  // defined by the client_panorama.dll
+#define FCVAR_CLIENTDLL			(1<<3)  // defined by the client.dll
 #define FCVAR_HIDDEN			(1<<4)	// Hidden. Doesn't appear in find or autocomplete. Like DEVELOPMENTONLY, but can't be compiled out.
 
 // ConVar only

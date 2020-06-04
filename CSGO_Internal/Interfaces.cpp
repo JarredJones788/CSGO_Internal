@@ -43,15 +43,15 @@ static T *GetInterface(const char *module, const char *name)
 
 CInterfaces::CInterfaces()
 {
-	Client = GetInterface<IBaseClientDLL>("client_panorama.dll", "VClient0");
+	Client = GetInterface<IBaseClientDLL>("client.dll", "VClient0");
 	Globals = **(CGlobalVarsBase***)((*(uintptr_t**)Client)[0] + 0x1B);
 	ClientMode = **(IClientMode***)((*(DWORD**)Client)[10] + 0x5);
 	Server = GetInterface<IServerGameDLL>("server.dll", "ServerGameDLL0");
 	Panel = GetInterface<IVPanel>("vgui2.dll", "VGUI_Panel");
-	ClientEntityList = GetInterface<IClientEntityList>("client_panorama.dll", "VClientEntityList");
+	ClientEntityList = GetInterface<IClientEntityList>("client.dll", "VClientEntityList");
 	EngineClient = GetInterface<IEngineClient>("engine.dll", "VEngineClient");
 	InputSystem = GetInterface<IInputSystem>("inputsystem.dll", "InputSystemVersion");
-	Input = *(CInput**)(Util.FindPattern("client_panorama.dll", "B9 ? ? ? ? F3 0F 11 04 24 FF 50 10") + 0x1);
+	Input = *(CInput**)(Util.FindPattern("client.dll", "B9 ? ? ? ? F3 0F 11 04 24 FF 50 10") + 0x1);
 	Surface = GetInterface<ISurface>("vguimatsurface.dll", "VGUI_Surface");
 	EngineTrace = GetInterface<IEngineTrace>("engine.dll", "EngineTraceClient");
 }
